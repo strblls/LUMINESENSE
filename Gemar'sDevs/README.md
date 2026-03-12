@@ -1,4 +1,4 @@
-Update (Mar 8) | folder name: Gemar'sDevs | commit message: Gemar's Commit
+Update (Mar 8-12) | folder name: Gemar'sDevs | commit message: Gemar's Commit
 
 on Folder Structure:
 - pages > *.html - all subfolders
