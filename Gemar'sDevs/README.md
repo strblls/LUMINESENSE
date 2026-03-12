@@ -1,23 +1,23 @@
 Update (Mar 8-12) | folder name: Gemar'sDevs | commit message: Gemar's Commit
 
 on Folder Structure:
-- pages > *.html - all subfolders
-- script - JS or React context or use states
+* pages > *.html - all subfolders
+* script - JS or React context or use states
 
 on CSS files:
-- containers.css - styling for containers and modals in all .html
-- global.css - global styling applicable for all .html
-- landing.css - css for landing.html
-- registration.css - css for both faculty and admin signup/login pages
+* containers.css - styling for containers and modals in all .html
+* global.css - global styling applicable for all .html
+* landing.css - css for landing.html
+* registration.css - css for both faculty and admin signup/login pages
 
 on PHP Significance
-- .html files with database integrations have "ALERT: PHP" as comments.
--- Special Cases: 
-    "ALERT: PHP | REQUIRE FORMS" Comment on buttons - ensure form validation of preceding fields as well as if email is not validated or not.
-    "ALERT: PHP | INPUT VALIDATION" Comment on input fields - ensure fields when attempted to be submitted have correct formatting (e.g. dots in M.I., proper casing on first and last names)
+* .html files with database integrations have "ALERT: PHP" as comments.
+* Special Cases: 
+    - "ALERT: PHP | REQUIRE FORMS" Comment on buttons - ensure form validation of preceding fields as well as if email is not validated or not.
+    - "ALERT: PHP | INPUT VALIDATION" Comment on input fields - ensure fields when attempted to be submitted have correct formatting (e.g. dots in M.I., proper casing on first and last names)
 
 on JavaScript compilation
-- expect .js scripts for the entire be compiled/organized for later reference. Elements required to be compiled have "ALERT: JS" as comments.
+* expect .js scripts for the entire be compiled/organized for later reference. Elements required to be compiled have "ALERT: JS" as comments.
 
 ___
 
