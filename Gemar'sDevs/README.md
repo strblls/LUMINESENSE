@@ -1,4 +1,5 @@
 Update (Mar 8) | folder name: Gemar'sDevs | commit message: Gemar's Commit
+
 on Folder Structure:
 - pages > *.html - all subfolders
 - script - JS or React context or use states
