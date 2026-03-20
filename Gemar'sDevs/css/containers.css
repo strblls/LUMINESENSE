@@ -17,10 +17,13 @@
     left: 20px;
     border-radius: 5px;
     overflow: hidden;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
 
     a {
         color: var(--secondary-color-4);
-        background-color: var(--primary-color);
         font-size: 24px;
         transition: color 0.3s ease;
         width: 50px;
@@ -195,5 +198,54 @@
 
     #cautionTriangle {
         font-size: 50px;
+    }
+}
+
+/*Sidebar*/
+.topbar {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+
+    button {
+        background-color: var(--primary-color);
+        color: var(--secondary-color-1);
+        border-radius: 10px;
+        padding: 10px 10px;
+        height: 50px;
+        width: 50px;
+
+        i {
+            font-size: 24px;
+        }
+    }
+
+    color: var(--primary-color);
+}
+
+.offcanvas {
+    width: 100px !important;
+    background-color: var(--primary-color);
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
+
+    .team-logo{
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+    }
+
+    .offcanvas-body button {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        
+        i {
+            font-size: 24px;
+        }
     }
 }
