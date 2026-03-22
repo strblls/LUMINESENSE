@@ -1,7 +1,7 @@
 <?php
 require_once '../includes/db.php';
 
-/*ADMINS ONLY!!!!!!! 
+/* ADMINS ONLY!!!!!!! 
    Example: creating an admin account for the first time
    Run this ONCE (Future selves) Protect this file after.*/
 
