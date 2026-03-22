@@ -1,12 +1,13 @@
 LumineSense — Project assets
 
-Drop the official raster logo into the project root as `logo.png`.
+Na sort na by folders, guys.
+Ang "luminesense" na folder backend na sha. Basi mag talangs.
 
-Files updated to use `logo.png`:
-- `luminesense_landign.html` (splash)
-- `index.html` (login)
-- `admin.html` and `faculty.html` (placeholders)
+Add lang ang UI screenshots sa imgs na folder if want niu
+Ang imgs na zip mga pics na ka UI pero basi old version na da, isli langs pu. 
 
-If you prefer a different filename, update the `src` attributes in those files or replace `logo.png` with the provided image.
 
-To test locally, open `luminesense_landign.html` or `index.html` in your browser.
+
+Backend notes:
+Username: admin
+Password: adminAKO123
