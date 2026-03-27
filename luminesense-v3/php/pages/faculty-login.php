@@ -48,18 +48,15 @@
 
             <!-- SESSION MESSAGES — shown when PHP redirects back with a message -->
             <?php
-                // This block only runs if this file is served through PHP (rename to .php
-                // or use a PHP include). For pure HTML prototyping, remove this block.
-                if (session_status() === PHP_SESSION_NONE) session_start();
-
-                if (!empty($_SESSION['login_error'])) {
-                    echo '<div class="alert alert-danger">' . htmlspecialchars($_SESSION['login_error']) . '</div>';
-                    unset($_SESSION['login_error']);
-                }
-                if (!empty($_SESSION['signup_success'])) {
-                    echo '<div class="alert alert-success">' . htmlspecialchars($_SESSION['signup_success']) . '</div>';
-                    unset($_SESSION['signup_success']);
-                }
+                    if (session_status() === PHP_SESSION_NONE) session_start();
+                    if (!empty($_SESSION['login_error'])) {
+                        echo '<div class="alert alert-danger">' . htmlspecialchars($_SESSION['login_error']) . '</div>';
+                        unset($_SESSION['login_error']);
+                    }
+                    if (!empty($_SESSION['signup_success'])) {
+                        echo '<div class="alert alert-success">' . htmlspecialchars($_SESSION['signup_success']) . '</div>';
+                        unset($_SESSION['signup_success']);
+                    }
             ?>
 
             <div class="form-container">
@@ -95,11 +92,12 @@
 
                     <div class="submit-container">
                         <button class="medium" type="submit">LOGIN</button>
-                        or<br>
-                        <a class="medium" onclick="dissolve('faculty-signup.php')">SIGN-UP</a>
                     </div>
-
                 </form>
+                    <div class="submit-container">
+                        Don't have an account?<br>
+                        <button class="medium" type="button" onclick="dissolve('faculty-signup.php')">SIGN-UP</button>
+                    </div>
             </div>
         </div>
     </div>
