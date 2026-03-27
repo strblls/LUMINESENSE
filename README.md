@@ -1,6 +1,12 @@
 LumineSense — Project assets
 
-Sorted na ang front and back^^ Pls pull the latest versions. Thank youuu
+Version 3 Patch 1:
+Na php na ang Admin/Faculty login pages
+Database loaded naman sha
+
+Frontend notes:
+Ara sa branch ni Thea ang Faculty Dashboard
+
 
 Backend notes:
 Username: admin
