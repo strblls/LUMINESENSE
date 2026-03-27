@@ -21,19 +21,141 @@
 <body class="contrast-bg">
     <div class="parent-container">
         <div class="topbar d-flex">
-            <button type="button" id="sidebarTrigger">
+            <button type="button" id="sidebarTrigger"
+                data-bs-toggle=""offcanvas"
+                data-bs-target="#sidebarOffcanvas" 
+                aria-controls="sidebarOffcanvas">
                 <i class="bi bi-list"></i>
             </button>
             <h1 class="px-3 bold">Welcome, First Name!</h1> <!--ALERT: PHP | DISPLAY-->
+            <p class ="topbar-sub mb-0"> Room 3A-B &nbsp;.nbsp; Grade 12 Einstein</p>
         </div>
-        <div class="child-container">
+        <div class="ms-auto d-flex align-items-center gap-2 pe-2">
+            <span class=""topbar-username">First Name</span> <!--ALERT: PHP | DISPLAY-->
+        </div>
 
-            <div style="background-color: red;">
-                5dsalfhskhfskhfsdfhdsfhks<br>
-                asdasdasd
-                AsdaSDSad
-                jdh00
+        <div class="child-container">
+            <div class="dashboard-grid">
+                <div class="dash-card timer-card d-flex flex-column align-items-center gap-3 flex-wrap">
+                    <div class="flex-grow-1"></div>
+                    <p class="dash-label mb-0">Time left</p>
+                    <p class="dash-sublabel mb-0">until the end of class</p>
+                </div>
+                <div class="timer-display" id="countdown"> 00:00:00</div>
+                <div class="d-flex flex-column gap-2"
+                    <button clas="btn-accent-sm">View Schedule</button>
+                    <button class="btn-accent-sm outline">Extend</button>
+                </div>
+
+
+            
+            <!--Light Grid-->
+            <div class="dash-card lighting-card">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="dashh-card-title">Lighting Grid</span>
+                    <button class="btn-outline-sm">More</button>
+                </div>
+                <div class="lighting-wrap d-flex gap-3">
+                    <div class="bulb-grid" id="bublGrid">
+                        <div class="bulb-cell" onclick="toggleBulb(this)">bulb icon here</div>
+                        <div class="bulb-cell" onclick="toggleBulb(this)">bulb icon here</div>
+                        <div class="bulb-cell" onclick="toggleBulb(this)">bulb icon here</div>
+                        <hr class="bulb-divider"></div>
+                        <div class="bulb-cell" onclick="toggleBulb(this)">bulb icon here</div>
+                        <div class="bulb-cell" onclick="toggleBulb(this)">bulb icon here</div>
+                        <div class="bulb-cell" onclick="toggleBulb(this)">bulb icon here</div>
+                        <hr class="bulb-divider"></div>
+                        <div class="bulb-cell" onclick="toggleBulb(this)">bulb icon here</div>
+                        <div class="bulb-cell" onclick="toggleBulb(this)">bulb icon here</div>
+                        <div class="bulb-cell" onclick="toggleBulb(this)">bulb icon here</div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between flex-grow-1"
+                    <div class="d-flex flex-column gap-3">
+                        <div class="row-toggle-item d-flex justify-content-between align-items-center">
+                            <span>Row 1</span>
+                            <label class="toggle-wrap">
+                                <input type="checkbox" checked onchange="toggleRow(0, this.checked)">
+                                <span class="toggle-track"></span>
+                            </label>
+                        </div>
+                        <div class="row-toggle-item d-flex justify-content-between align-items-center">
+                            <span>Row 2</span>
+                            <label class="toggle-wrap">
+                                <input type="checkbox" checked onchange="toggleRow(1, this.checked)">
+                                <span class="toggle-track"></span>
+                            </label>
+                        <div class="row-toggle-item d-flex justify-content-between align-items-center">
+                            <span>Row 3</span>
+                            <label class="toggle-wrap">
+                                <input type="checkbox" checked onchange="toggleRow(2, this.checked)">
+                                <span class="toggle-track"></span>
+                            </label>
+                        </div>
+                    </div>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div>
+                                <p class="dash-label mb-0">All Lights</p>
+                                <p class="all-lights-status-on mb-0" id="allLightsStatus">ON</p>
+                            </div>
+                            <button class="power-btn" onclick="toggleAllLights()">
+                                <i class="bi bi-power"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>         
             </div>
+
+            <!--Recent Activity-->
+            <div class="dash-card">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="dash-card-title">Recent Acitivities</span>
+                    <button class="btn-outline-sm">Details</button>
+                </div>
+                    <div class="activity-list">
+                        <p class="activity-title mb-0">Detected Motion</p>
+                        <p class="activity-meta mb-0">time & date</p>
+                    </div>
+                    <div class="activity-list">
+                        <p class="activity-title mb-0">Detected Motion</p>
+                        <p class="activity-meta mb-0">time & date</p>
+                    </div>
+                    <div class="activity-list">
+                        <p class="activity-title mb-0">Detected Motion</p>
+                        <p class="activity-meta mb-0">time & date</p>
+                    </div>
+                </div>
+
+            
+            <!--System Status-->
+            <div class="dash-card">
+                <div class="mb-3">
+                    <span class="dash-card-tiile">System Status</span>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <div class="status-row d-flex justify-content-between">
+                        <span class="status-key">Ligthing: </span>
+                        <span class="status-val ok">Operational</span>
+                    </div>
+                    <div class="status-row d-flex justify-content-between">
+                        <span class="status-key">Server: </span>
+                        <span class="status-val ok">Connected</span>
+                    </div>
+                    <div class="status-row d-flex justify-content-between">
+                        <span class="status-key">Webcam: </span>
+                        <span class="status-val ok">Disabled</span>
+                    </div>
+                    <div class="status-row d-flex justify-content-between">
+                        <span class="status-key">Sensor Reading: </span>
+                        <span class="status-val ok">Operational</span>
+                    </div>
+                    <div class="status-row d-flex justify-content-between">
+                        <span class="status-key">System Uptime: </span>
+                        <span class="status-val ok">00:00:00</span>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
 
             <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarOffcanvas"
                 aria-labelledby="sidebarOffcanvasLabel">
