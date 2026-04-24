@@ -46,7 +46,11 @@
                     </form>
                 </div>
                 <form> <!--ALERT: PHP-->
-                    <label for="email">Faculty E-mail</label>
+                    <label for="email">Admin Code</label>
+                    <input type="text" class="form-control" id="email" placeholder="Enter admin code">
+                </form>
+                <form> <!--ALERT: PHP-->
+                    <label for="email">Admin E-mail</label>
                     <input type="email" class="form-control" id="email" placeholder="Enter your email">
                 </form>
                 <form> <!--ALERT: PHP-->
@@ -65,22 +69,9 @@
                     </div>
                 </form>
                 <div class="submit-container">
-                    <button class="medium" type="submit" onclick="toggleModal('notify-modal')">SIGN IN</button>
-                    <!--ALERT: PHP|REQUIRE FORMS-->
+                    <button class="medium" type="submit" onclick="dissolve('admin-login.html')">SIGN IN</button>
                     or<br>
                     <a class="medium" onclick="dissolve('admin-login.html')">LOG IN</a>
-                </div>
-                <div class="notify-modal">
-                    <div class="modal-box">
-                        <div id="modal-header">
-                            <h5><strong>!</strong> Validation Required</h5>
-                        </div>
-                        <div id="modal-body">
-                            <i class="bi bi-exclamation-triangle" id="cautionTriangle"></i>
-                            <h5>Validate your Admin ID from the <strong>Information Systems Office</strong><br>for validation and authentication.</h5>
-                        </div>
-                        <div id="modal-footer"><button class="medium" type="submit" onclick="dissolve('admin-login.html')">CONFIRM</button></div>
-                    </div>
                 </div>
             </div>
         </div>

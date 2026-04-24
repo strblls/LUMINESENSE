@@ -1,3 +1,17 @@
+Update (Apr 14) | folder name: Gemar'sDevs | commit message: Faculty Homepage 2
+
+on deletion of MIS Office:
+- popup deleted when admins are prompted to go the 'MIS'
+- admin registration now needs Admin Code (assumed to be intravenous sa company only)
+
+on Later additions:
+- Toast - Bootstrap elements with modified dissolve() function from animation.js. Different toast visuals align with success/fail in signup/login, esp. sa admin.
+
+On PHP Significance:
+* Special Cases: 
+    - "ALERT: PHP | DISPLAY" on text or headings - indicates login-specific display for text like whomever or ano iya first name (display: Welcome first name)
+___
+
 Update (Mar 16) | folder name: Gemar'sDevs | commit message: Faculty Homepage
 
 on Folder Structure:
